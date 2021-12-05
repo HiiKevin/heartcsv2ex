@@ -44,7 +44,9 @@ def _create_csv_point(pts):
 
 
 def main():
-    args = parse_args()
+    #args = parse_args()
+    args=ProgramArguments()
+    args.input_csvs="E:\\082\\csv"
     if os.path.exists(args.input_csvs):
         if args.output_ex is None:
             output_ex = os.path.join(args.input_csvs, 'combined.ex')
